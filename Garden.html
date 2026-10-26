@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Garden notes from Hodaris Press: grow food, care for soil, and learn from the seasons.">
+    <meta name="theme-color" content="#0e6938">
+    <title>Garden Journal | Hodaris Press</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="farm.css">
+</head>
+<body class="garden-page">
+    <a class="skip-link" href="#garden-main">Skip to content</a>
+    <div class="utility-bar">
+        <div class="utility-inner">
+            <button class="utility-search" id="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Open site search">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m12.5 12.5 4 4"></path></svg>
+                <span>Search</span>
+            </button>
+            <div class="utility-social" aria-label="Social links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://x.com/" aria-label="X">X</a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                <a href="https://wa.me/" aria-label="WhatsApp">◉</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="search-panel" id="site-search" hidden>
+        <div class="search-panel-inner">
+            <form id="site-search-form" role="search">
+                <label class="visually-hidden" for="site-search-input">Search articles and resources</label>
+                <input id="site-search-input" type="search" placeholder="Search articles and resources..." autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+            <button id="search-close" class="search-close" type="button" aria-label="Close search">Close</button>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Hodaris Garden home"><img src="Hodaris Garden.png" alt="Hodaris Garden"></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="menu-label">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a class="nav-item" href="index.html"><span>Home</span><small>Resource centre</small></a>
+                <a class="nav-item" href="blog.html#resources"><span>Blogs &amp; publications</span><small>Stories and articles</small></a>
+                <a class="nav-item" href="gallery.html"><span>Gallery</span><small>Visual stories</small></a>
+                <a class="nav-item is-current" href="Garden.html" aria-current="page"><span>Garden</span><small>Grow &amp; learn</small></a>
+                <a class="nav-item" href="how-to.html"><span>How-to</span><small>Make &amp; improve</small></a>
+                <a class="nav-item" href="review.html"><span>Reviews</span><small>Considered opinions</small></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="garden-main">
+        <section class="garden-masthead">
+            <p><a href="index.html">Hodaris Press</a><span aria-hidden="true">/</span> Garden Journal</p>
+            <span class="garden-edition">GROWING NOTES · FIELD JOURNAL</span>
+        </section>
+
+        <section class="garden-hero" aria-labelledby="garden-title">
+            <img class="garden-hero-image" src="Collards.jpg" alt="A healthy collard plant growing in the garden" fetchpriority="high">
+            <div class="garden-hero-overlay"></div>
+            <div class="garden-hero-content">
+                <p class="garden-eyebrow"><span></span> From soil to table</p>
+                <h1 id="garden-title">A garden grows<br><em>one day at a time.</em></h1>
+                <p>Growing food is a practice of attention: learn your soil, notice the weather, and make room for the small things to thrive.</p>
+                <a class="button button-light" href="#garden-notes">Explore the garden <span aria-hidden="true">&darr;</span></a>
+            </div>
+            <span class="garden-photo-caption">COLLARDS IN THE HOME GARDEN · HODARIS STUDIO</span>
+        </section>
+
+        <section class="garden-intro" aria-label="About the garden journal">
+            <p class="garden-intro-label">A living notebook</p>
+            <p>Useful, grounded notes for people who want to grow more — whether you have a backyard, a balcony, a few containers, or a patch of good soil.</p>
+        </section>
+
+        <section class="garden-notes garden-section" id="garden-notes" aria-labelledby="notes-title">
+            <div class="garden-section-heading">
+                <div>
+                    <p class="garden-section-kicker">Browse by what you need</p>
+                    <h2 id="notes-title">Notes for the growing season</h2>
+                </div>
+                <a class="garden-all-link" href="blog.html#resources">All field notes <span aria-hidden="true">&rarr;</span></a>
+            </div>
+
+            <div class="garden-filters" role="group" aria-label="Filter garden notes">
+                <button class="garden-filter is-active" type="button" data-garden-filter="all" aria-pressed="true">All notes</button>
+                <button class="garden-filter" type="button" data-garden-filter="soil" aria-pressed="false">Soil &amp; water</button>
+                <button class="garden-filter" type="button" data-garden-filter="planting" aria-pressed="false">Planting</button>
+                <button class="garden-filter" type="button" data-garden-filter="harvest" aria-pressed="false">Harvest</button>
+            </div>
+
+            <div class="garden-card-grid" id="garden-card-grid">
+                <article class="garden-card" data-garden-type="soil">
+                    <a class="garden-card-image" href="blog.html#resources" aria-label="Read more garden notes about soil">
+                        <img src="Collards.jpg" alt="Water droplets on broad green collard leaves" loading="lazy">
+                        <span>01 / SOIL &amp; WATER</span>
+                    </a>
+                    <div class="garden-card-copy">
+                        <p class="garden-card-meta">Start with the ground beneath you</p>
+                        <h3><a href="blog.html#resources">Build healthy soil, slowly</a></h3>
+                        <p>Feed the soil with compost and organic matter, keep it covered, and observe how it responds before reaching for quick fixes.</p>
+                        <a class="garden-card-link" href="blog.html#resources">Explore soil notes <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="garden-card" data-garden-type="planting">
+                    <a class="garden-card-image" href="blog.html#resources" aria-label="Read more garden notes about planting">
+                        <img src="Tomatoes.jpg" alt="Young green tomatoes growing among healthy leaves" loading="lazy">
+                        <span>02 / PLANTING</span>
+                    </a>
+                    <div class="garden-card-copy">
+                        <p class="garden-card-meta">Make space for the next thing</p>
+                        <h3><a href="blog.html#resources">Plan a small kitchen garden</a></h3>
+                        <p>Choose crops your household enjoys, start with a manageable bed or container, and give each plant the light and space it needs.</p>
+                        <a class="garden-card-link" href="blog.html#resources">Explore planting notes <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="garden-card" data-garden-type="harvest">
+                    <a class="garden-card-image" href="blog.html#resources" aria-label="Read more garden notes about harvest">
+                        <img src="Pumpkin.jpg" alt="A bright pumpkin flower opening in the garden" loading="lazy">
+                        <span>03 / HARVEST</span>
+                    </a>
+                    <div class="garden-card-copy">
+                        <p class="garden-card-meta">Notice the signs of growth</p>
+                        <h3><a href="blog.html#resources">From flower to harvest</a></h3>
+                        <p>Learn to spot the stages of fruiting, pick at the right time, and make the most of what your garden gives you.</p>
+                        <a class="garden-card-link" href="blog.html#resources">Explore harvest notes <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+            <p id="garden-empty-state" class="garden-empty-state" hidden>No notes in this category yet. Choose another topic to keep exploring.</p>
+        </section>
+
+        <section class="garden-principles" aria-labelledby="principles-title">
+            <div class="garden-principles-heading">
+                <p class="garden-section-kicker">The garden practice</p>
+                <h2 id="principles-title">Small, steady acts<br>make a living garden.</h2>
+            </div>
+            <div class="garden-principles-list">
+                <article><span>01</span><div><h3>Observe first</h3><p>Notice sunlight, water flow, soil texture and the life already present in your space.</p></div></article>
+                <article><span>02</span><div><h3>Grow what you use</h3><p>Start with a few familiar crops, then learn from each planting before expanding.</p></div></article>
+                <article><span>03</span><div><h3>Keep learning</h3><p>Every season offers new information. Record what worked and what you might try next.</p></div></article>
+            </div>
+        </section>
+
+        <section class="garden-feature">
+            <img src="Bouganvillea.jpg" alt="Bright bougainvillea flowers thriving outdoors" loading="lazy">
+            <div class="garden-feature-copy">
+                <p class="garden-section-kicker">Beyond the vegetable bed</p>
+                <h2>Grow a place that feels alive.</h2>
+                <p>Flowers, herbs, food plants and the creatures they welcome all belong in the story of a garden.</p>
+                <a class="garden-card-link" href="gallery.html">Visit the gallery <span aria-hidden="true">&rarr;</span></a>
+            </div>
+        </section>
+
+        <section class="garden-cta">
+            <p class="garden-section-kicker">Keep growing with us</p>
+            <h2>More ideas from the Hodaris archive.</h2>
+            <a class="button button-light" href="blog.html#resources">Browse articles &amp; guides <span aria-hidden="true">&rarr;</span></a>
+        </section>
+    </main>
+
+    <footer class="home-footer garden-footer">
+        <div class="footer-main">
+            <div class="footer-brand-column">
+                <a href="index.html" class="footer-brand" aria-label="Hodaris Garden home"><img src="Hodaris Garden.png" alt="Hodaris Garden"></a>
+                <p>Hodaris Press publishes an open archive of knowledge — articles, literature, media and research for the curious and the committed.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                    <a href="https://x.com/" aria-label="X">X</a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="blog.html#resources">Blogs &amp; publications</a>
+                <a href="gallery.html">Gallery &amp; portfolio</a>
+                <a href="Garden.html">Garden journal</a>
+                <a href="review.html">Reviews</a>
+            </div>
+            <div class="footer-column">
+                <h2>Garden journal</h2>
+                <a href="#garden-notes">Soil &amp; water</a>
+                <a href="#garden-notes">Planting</a>
+                <a href="#garden-notes">Harvest</a>
+            </div>
+            <div class="footer-column">
+                <h2>Hodaris Press</h2>
+                <a href="index.html#about">About the resource centre</a>
+                <a href="blog.html#resources">Browse the archive</a>
+                <a href="index.html">Back to home</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>&copy; <span id="current-year"></span> Hodaris Press</span><a href="#garden-main">Back to top &uarr;</a></div>
+    </footer>
+
+    <script src="wordpress-posts.js"></script>
+    <script src="home.js"></script>
+    <script src="Garden.js"></script>
+</body>
+</html>
