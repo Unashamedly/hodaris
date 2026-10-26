@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thoughtful Hodaris reviews of books, films, products, services, places and other media, with context to help you decide what is worth your time.">
+    <meta name="theme-color" content="#20419a">
+    <title>Reviews | Hodaris Press</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="review.css">
+</head>
+<body class="review-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="utility-bar">
+        <div class="utility-inner">
+            <button class="utility-search" id="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Open site search">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m12.5 12.5 4 4"></path></svg>
+                <span>Search</span>
+            </button>
+            <div class="utility-social" aria-label="Social links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://x.com/" aria-label="X">X</a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                <a href="https://wa.me/" aria-label="WhatsApp">◉</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="search-panel" id="site-search" hidden>
+        <div class="search-panel-inner">
+            <form id="site-search-form" role="search">
+                <label class="visually-hidden" for="site-search-input">Search articles and resources</label>
+                <input id="site-search-input" type="search" placeholder="Search articles and resources..." autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+            <button id="search-close" class="search-close" type="button" aria-label="Close search">Close</button>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Hodaris Press home"><img src="Asset 2.png" alt="Hodaris Press"></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="menu-label">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a class="nav-item" href="index.html"><span>Home</span><small>Resource centre</small></a>
+                <a class="nav-item" href="blog.html#resources"><span>Blogs &amp; publications</span><small>Stories and articles</small></a>
+                <a class="nav-item" href="gallery.html"><span>Gallery</span><small>Visual stories</small></a>
+                <a class="nav-item" href="Garden.html"><span>Garden</span><small>Grow &amp; learn</small></a>
+                <a class="nav-item" href="how-to.html"><span>How-to</span><small>Make &amp; improve</small></a>
+                <a class="nav-item is-current" href="review.html" aria-current="page"><span>Reviews</span><small>Considered opinions</small></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="review-breadcrumb"><a href="index.html">Hodaris Press</a><span aria-hidden="true">/</span><span>Reviews</span></div>
+
+        <section class="review-hero" aria-labelledby="review-title">
+            <img src="Veritate.jpg" alt="" fetchpriority="high">
+            <div class="review-hero-shade"></div>
+            <div class="review-hero-copy">
+                <p class="review-eyebrow"><span></span> The Hodaris review desk</p>
+                <h1 id="review-title">A closer look.<br><em>A clearer choice.</em></h1>
+                <p>Considered perspectives on the things we read, watch, use and experience — with context to help you decide what deserves your time.</p>
+                <a class="button button-light" href="#review-library">Explore reviews <span aria-hidden="true">&darr;</span></a>
+            </div>
+            <span class="review-hero-caption">THOUGHTFUL NOTES FOR EVERYDAY DECISIONS</span>
+        </section>
+
+        <section class="review-intro" aria-label="About Hodaris reviews">
+            <p class="review-intro-label">More than a score</p>
+            <p>We look at the details that matter: what something offers, who it may suit, where it falls short and what to consider before you choose. Our reviews aim to be clear, fair and useful.</p>
+        </section>
+
+        <section class="review-library" id="review-library" aria-labelledby="review-library-title">
+            <div class="review-heading">
+                <div>
+                    <p class="review-kicker">Browse the review desk</p>
+                    <h2 id="review-library-title">What are you curious about?</h2>
+                </div>
+                <label class="review-search">
+                    <span class="visually-hidden">Search review topics</span>
+                    <input id="review-search" type="search" placeholder="Search reviews..." autocomplete="off">
+                    <span aria-hidden="true">⌕</span>
+                </label>
+            </div>
+
+            <div class="review-filters" role="group" aria-label="Filter review topics">
+                <button class="review-filter is-active" type="button" data-review-filter="all" aria-pressed="true">All reviews</button>
+                <button class="review-filter" type="button" data-review-filter="books" aria-pressed="false">Books</button>
+                <button class="review-filter" type="button" data-review-filter="screen" aria-pressed="false">Film &amp; TV</button>
+                <button class="review-filter" type="button" data-review-filter="products" aria-pressed="false">Products</button>
+                <button class="review-filter" type="button" data-review-filter="services" aria-pressed="false">Services</button>
+                <button class="review-filter" type="button" data-review-filter="places" aria-pressed="false">Places</button>
+                <button class="review-filter" type="button" data-review-filter="media" aria-pressed="false">Other media</button>
+            </div>
+
+            <p class="review-result-count" id="review-result-count" aria-live="polite">Showing all review topics</p>
+
+            <div class="review-grid" id="review-grid">
+                <article class="review-card review-card-featured" data-review-category="books" data-review-search="books publications reading literature ideas">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="Pen.jpg" alt="A notebook and pen ready for reading notes" loading="lazy">
+                        <span>BOOKS &amp; PUBLICATIONS</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">Reading desk <span>·</span> Books</p>
+                        <h3><a href="blog.html#resources">Books that stay with you after the last page</a></h3>
+                        <p>Explore thoughtful appraisals of ideas, writing, practical value and the readers a book may serve.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore reading notes <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-review-category="screen" data-review-search="film movies television tv screen cinema series">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="Seasky.jpg" alt="A wide evening sky, evoking a cinematic scene" loading="lazy">
+                        <span>FILM &amp; TELEVISION</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">On screen <span>·</span> Film &amp; TV</p>
+                        <h3><a href="blog.html#resources">Stories for the big and small screen</a></h3>
+                        <p>Consider the storytelling, performances, themes and audience fit behind a film or series.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore screen reviews <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-review-category="products" data-review-search="products tools home garden everyday use">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="Grocery.png" alt="Everyday goods for a home and lifestyle" loading="lazy">
+                        <span>PRODUCTS &amp; TOOLS</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">Made for use <span>·</span> Products</p>
+                        <h3><a href="blog.html#resources">Useful things, looked at closely</a></h3>
+                        <p>Weigh up design, usability, durability, value and the needs a product actually meets.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore product reviews <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-review-category="services" data-review-search="services customer care delivery digital support service">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="Phone.jpg" alt="A phone used to access a digital service" loading="lazy">
+                        <span>SERVICES</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">The experience <span>·</span> Services</p>
+                        <h3><a href="blog.html#resources">How a service works in everyday life</a></h3>
+                        <p>Look for clarity, accessibility, support, reliability and the fine print behind an offer.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore service reviews <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-review-category="places" data-review-search="places cafes restaurants travel stays destinations">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="Bouganvillea.jpg" alt="Flowers in a welcoming outdoor place" loading="lazy">
+                        <span>PLACES &amp; EXPERIENCES</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">Out in the world <span>·</span> Places</p>
+                        <h3><a href="blog.html#resources">Places worth making time for</a></h3>
+                        <p>Get a grounded sense of atmosphere, access, hospitality and what to expect before you go.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore place reviews <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+
+                <article class="review-card" data-review-category="media" data-review-search="podcasts audio music apps digital media">
+                    <a class="review-card-image" href="blog.html#resources">
+                        <img src="blue.jpg" alt="Abstract blue image representing digital media" loading="lazy">
+                        <span>PODCASTS &amp; OTHER MEDIA</span>
+                    </a>
+                    <div class="review-card-copy">
+                        <p class="review-card-meta">Listen &amp; explore <span>·</span> Other media</p>
+                        <h3><a href="blog.html#resources">Ideas to hear, stream and discover</a></h3>
+                        <p>Discover perspectives on podcasts, audio, digital media and the experiences around them.</p>
+                        <a class="review-card-link" href="blog.html#resources">Explore media reviews <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                </article>
+            </div>
+            <p class="review-empty-state" id="review-empty-state" hidden>No review topics match that search. Try a different term or category.</p>
+        </section>
+
+        <section class="review-method" aria-labelledby="review-method-title">
+            <div class="review-method-heading">
+                <p class="review-kicker">Our approach</p>
+                <h2 id="review-method-title">Useful, honest, in context.</h2>
+                <p>Reviews should help you make up your own mind, not make it for you.</p>
+            </div>
+            <div class="review-method-list">
+                <article><span>01</span><div><h3>Say what was assessed</h3><p>We identify the item or experience and give enough context to understand the review.</p></div></article>
+                <article><span>02</span><div><h3>Show the trade-offs</h3><p>We share strengths and limitations, and explain who may find it useful.</p></div></article>
+                <article><span>03</span><div><h3>Be clear about perspective</h3><p>We distinguish personal experience, editorial judgment and information supplied by others.</p></div></article>
+            </div>
+        </section>
+
+        <section class="review-note">
+            <p class="review-kicker">A note to readers</p>
+            <p>Every review is a perspective, not a universal verdict. Check current details such as prices, availability, opening times and service terms before making plans or purchases.</p>
+        </section>
+
+        <section class="review-cta">
+            <div>
+                <p class="review-kicker">Keep exploring</p>
+                <h2>Find more ideas in the Hodaris archive.</h2>
+            </div>
+            <a class="button button-light" href="blog.html#resources">Browse articles &amp; publications <span aria-hidden="true">&rarr;</span></a>
+        </section>
+    </main>
+
+    <footer class="home-footer review-footer">
+        <div class="footer-main">
+            <div class="footer-brand-column">
+                <a href="index.html" class="footer-brand" aria-label="Hodaris Press home"><img src="Whitelogo.png" alt="Hodaris Press"></a>
+                <p>Hodaris Press publishes an open archive of knowledge — articles, literature, media and research for the curious and the committed.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                    <a href="https://x.com/" aria-label="X">X</a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="blog.html#resources">Blogs &amp; publications</a>
+                <a href="gallery.html">Gallery &amp; portfolio</a>
+                <a href="Garden.html">Garden</a>
+            </div>
+            <div class="footer-column">
+                <h2>Discover</h2>
+                <a href="how-to.html">How-to guides</a>
+                <a href="review.html" aria-current="page">Reviews</a>
+                <a href="blog.html#resources">Podcasts &amp; media</a>
+            </div>
+            <div class="footer-column">
+                <h2>Hodaris Press</h2>
+                <a href="index.html#about">About the resource centre</a>
+                <a href="blog.html#resources">Browse the archive</a>
+                <a href="index.html">Back to home</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>&copy; <span id="current-year"></span> Hodaris Press</span><a href="#main-content">Back to top &uarr;</a></div>
+    </footer>
+
+    <script src="wordpress-posts.js"></script>
+    <script src="home.js"></script>
+    <script src="review.js"></script>
+</body>
+</html>
