@@ -1,0 +1,676 @@
+.howto-page {
+    --home-blue: #603813;
+    --home-ink: #241a12;
+    --home-muted: #74675c;
+    --home-line: #e7ddd2;
+    --home-paper: #f7f2ec;
+    --howto-brown-dark: #3d2616;
+    --howto-brown-pale: #f4eee7;
+}
+
+.howto-page :is(a, button, input):focus-visible {
+    outline-color: #9a6638;
+}
+
+.howto-page .utility-bar {
+    background: var(--home-blue);
+}
+
+.howto-page .nav-item:hover > span,
+.howto-page .nav-item.is-current > span {
+    color: var(--home-blue);
+}
+
+.howto-page .menu-toggle {
+    color: var(--home-blue);
+}
+
+.howto-page .search-panel {
+    background: rgba(47, 29, 17, 0.97);
+}
+
+.howto-page .button-light:hover {
+    background: #ead9c7;
+}
+
+.howto-page .home-footer {
+    background: var(--howto-brown-dark);
+}
+
+.howto-page .footer-brand img {
+    filter: brightness(0) invert(1);
+}
+
+.howto-breadcrumb {
+    display: flex;
+    width: min(100% - 3rem, 1280px);
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0 auto;
+    padding: 0.9rem 0;
+    color: #68768a;
+    font-size: 0.66rem;
+}
+
+.howto-breadcrumb a {
+    color: var(--home-blue);
+}
+
+.howto-breadcrumb a:hover {
+    text-decoration: underline;
+}
+
+.howto-hero {
+    position: relative;
+    display: flex;
+    min-height: clamp(440px, 51vw, 650px);
+    align-items: center;
+    overflow: hidden;
+    background: var(--howto-brown-dark);
+    color: #fff;
+}
+
+.howto-hero > img,
+.howto-hero-shade {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.howto-hero > img {
+    object-fit: cover;
+    object-position: center 54%;
+}
+
+.howto-hero-shade {
+    background: linear-gradient(90deg, rgba(39, 24, 13, 0.88) 0%, rgba(61, 38, 22, 0.72) 52%, rgba(61, 38, 22, 0.3) 100%);
+}
+
+.howto-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(100% - 3rem, 1280px);
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.howto-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    margin: 0;
+    color: #e7c9aa;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.howto-eyebrow span {
+    width: 24px;
+    height: 1px;
+    background: currentColor;
+}
+
+.howto-hero h1 {
+    max-width: 740px;
+    margin: 1.25rem 0 1rem;
+    font-family: var(--home-serif);
+    font-size: clamp(2.7rem, 6.2vw, 5.4rem);
+    font-weight: 400;
+    letter-spacing: -0.04em;
+    line-height: 1.04;
+}
+
+.howto-hero h1 em {
+    color: #e7c9aa;
+    font-weight: 400;
+}
+
+.howto-hero-content > p:not(.howto-eyebrow) {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.88);
+    font-size: clamp(0.86rem, 1.4vw, 1rem);
+    line-height: 1.8;
+}
+
+.howto-hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.7rem;
+}
+
+.howto-hero-caption {
+    position: absolute;
+    right: max(1.5rem, calc((100% - 1280px) / 2));
+    bottom: 1.2rem;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+}
+
+.howto-intro {
+    display: grid;
+    grid-template-columns: minmax(180px, 0.75fr) minmax(0, 1.6fr);
+    align-items: start;
+    gap: 2rem;
+    width: min(100% - 3rem, 1050px);
+    margin: 0 auto;
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--home-line);
+}
+
+.howto-intro-label,
+.howto-section-kicker {
+    margin: 0;
+    color: var(--home-blue);
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+.howto-intro-label {
+    padding-top: 0.4rem;
+}
+
+.howto-intro > p:last-child {
+    max-width: 760px;
+    margin: 0;
+    color: #5f5147;
+    font-family: var(--home-serif);
+    font-size: clamp(1.15rem, 2.3vw, 1.65rem);
+    line-height: 1.55;
+}
+
+.howto-projects {
+    width: min(100% - 3rem, 1280px);
+    margin: 0 auto;
+    padding: clamp(3.25rem, 7vw, 6rem) 0;
+}
+
+.howto-section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin-bottom: 1.6rem;
+}
+
+.howto-section-heading h2,
+.process-intro h2,
+.howto-bottom-cta h2 {
+    margin: 0.55rem 0 0;
+    color: var(--home-ink);
+    font-family: var(--home-serif);
+    font-size: clamp(1.85rem, 4vw, 2.9rem);
+    font-weight: 400;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.howto-section-summary {
+    max-width: 300px;
+    margin: 0 0 0.2rem;
+    color: var(--home-muted);
+    font-size: 0.78rem;
+    line-height: 1.6;
+}
+
+.howto-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1.5rem;
+}
+
+.howto-filter {
+    min-height: 35px;
+    padding: 0.5rem 0.8rem;
+    border: 1px solid #dfd2c4;
+    background: #fff;
+    color: #66564a;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0.65rem;
+    transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.howto-filter:hover,
+.howto-filter.is-active {
+    border-color: var(--home-blue);
+    background: var(--home-blue);
+    color: #fff;
+}
+
+.howto-project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.howto-project-card {
+    min-width: 0;
+    border: 1px solid var(--home-line);
+    background: #fff;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.howto-project-card.is-selected {
+    border-color: #b18b68;
+    box-shadow: 0 6px 22px rgba(96, 56, 19, 0.12);
+}
+
+.howto-project-card[hidden] {
+    display: none;
+}
+
+.howto-project-select {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-align: left;
+}
+
+.howto-project-select:focus-visible {
+    outline-offset: -3px;
+}
+
+.howto-project-image {
+    position: relative;
+    display: block;
+    height: clamp(170px, 19vw, 235px);
+    overflow: hidden;
+    background: #f0e8df;
+}
+
+.howto-project-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.45s ease;
+}
+
+.howto-project-card:hover .howto-project-image img {
+    transform: scale(1.04);
+}
+
+.howto-project-image > span {
+    position: absolute;
+    bottom: 0.7rem;
+    left: 0.75rem;
+    padding: 0.4rem 0.5rem;
+    background: rgba(61, 38, 22, 0.9);
+    color: #fff;
+    font-size: 0.53rem;
+    letter-spacing: 0.1em;
+}
+
+.howto-project-copy {
+    display: grid;
+    gap: 0.42rem;
+    padding: 1rem 1rem 1.1rem;
+}
+
+.howto-project-copy > small {
+    color: #7889a0;
+    font-size: 0.61rem;
+}
+
+.howto-project-copy > strong {
+    color: #2a1e14;
+    font-family: var(--home-serif);
+    font-size: 1.22rem;
+    font-weight: 500;
+    line-height: 1.28;
+}
+
+.howto-project-copy > span:not(.howto-open-guide) {
+    color: #66758a;
+    font-size: 0.72rem;
+    line-height: 1.6;
+}
+
+.howto-open-guide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.3rem;
+    color: var(--home-blue);
+    font-size: 0.61rem;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
+.howto-open-guide b {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.howto-empty-state {
+    padding: 1rem;
+    color: var(--home-muted);
+    font-size: 0.85rem;
+}
+
+.process-section {
+    display: grid;
+    grid-template-columns: minmax(260px, 0.8fr) minmax(0, 1.2fr);
+    gap: clamp(2rem, 6vw, 5rem);
+    padding: clamp(3rem, 7vw, 5.5rem) max(1.5rem, calc((100% - 1160px) / 2));
+    background: var(--howto-brown-pale);
+}
+
+.process-intro > p:not(.howto-section-kicker) {
+    max-width: 480px;
+    margin: 0.85rem 0 1.2rem;
+    color: #627187;
+    font-size: 0.8rem;
+    line-height: 1.75;
+}
+
+.process-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin: 1rem 0;
+}
+
+.process-meta span {
+    padding: 0.4rem 0.55rem;
+    border: 1px solid #ddcbbb;
+    color: #604a37;
+    font-size: 0.57rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.materials-panel {
+    margin-top: 1.4rem;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid #e7ddd2;
+}
+
+.materials-panel h3 {
+    margin: 0 0 0.6rem;
+    color: #2a1e14;
+    font-family: var(--home-serif);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.materials-panel ul {
+    display: grid;
+    gap: 0.42rem;
+    margin: 0;
+    padding-left: 1.1rem;
+    color: #627187;
+    font-size: 0.7rem;
+    line-height: 1.5;
+}
+
+.process-safety {
+    margin-top: 0.8rem;
+    padding: 0.95rem 1rem;
+    border-left: 3px solid #c28a32;
+    background: #fff8eb;
+    color: #614c2f;
+}
+
+.process-safety strong {
+    font-size: 0.68rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.process-safety p {
+    margin: 0.35rem 0 0;
+    font-size: 0.69rem;
+    line-height: 1.6;
+}
+
+.process-safety.is-critical {
+    border-left-color: #b34438;
+    background: #fff1ef;
+    color: #672c27;
+}
+
+.process-steps-panel {
+    padding: clamp(1rem, 3vw, 2rem);
+    background: #fff;
+    border: 1px solid #e0e7ef;
+}
+
+.process-steps-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 0.85rem;
+    border-bottom: 1px solid #e7ddd2;
+}
+
+.process-number,
+.process-steps-heading p {
+    margin: 0;
+    color: #7487a2;
+    font-size: 0.57rem;
+    letter-spacing: 0.12em;
+}
+
+.process-steps-heading p {
+    color: var(--home-blue);
+    font-weight: 700;
+}
+
+.process-steps {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    counter-reset: guide-step;
+}
+
+.process-steps li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    gap: 0.8rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #eee6de;
+    counter-increment: guide-step;
+}
+
+.process-steps li::before {
+    display: grid;
+    width: 30px;
+    height: 30px;
+    place-items: center;
+    border: 1px solid #ddcbbb;
+    border-radius: 50%;
+    color: var(--home-blue);
+    content: counter(guide-step, decimal-leading-zero);
+    font-size: 0.62rem;
+}
+
+.process-steps h3 {
+    margin: 0;
+    color: #2a1e14;
+    font-family: var(--home-serif);
+    font-size: 1.08rem;
+    font-weight: 500;
+}
+
+.process-steps p {
+    margin: 0.35rem 0 0;
+    color: #637187;
+    font-size: 0.72rem;
+    line-height: 1.65;
+}
+
+.process-note {
+    margin: 1rem 0 0;
+    color: #68768a;
+    font-size: 0.68rem;
+    line-height: 1.65;
+}
+
+.howto-principles {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.6rem 1rem;
+    border-bottom: 1px solid var(--home-line);
+    color: #5f4b39;
+}
+
+.howto-principles p {
+    margin: 0;
+    font-family: var(--home-serif);
+    font-size: 1.05rem;
+}
+
+.howto-principles > span {
+    color: #c5a27d;
+}
+
+.howto-bottom-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: clamp(2.5rem, 5vw, 4rem) max(1.5rem, calc((100% - 1280px) / 2));
+    background: var(--home-blue);
+}
+
+.howto-bottom-cta .howto-section-kicker {
+    color: #e7c9aa;
+}
+
+.howto-bottom-cta h2 {
+    max-width: 650px;
+    color: #fff;
+}
+
+.howto-bottom-cta .button {
+    flex: 0 0 auto;
+}
+
+@media (max-width: 820px) {
+    .howto-project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .process-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .howto-breadcrumb,
+    .howto-hero-content,
+    .howto-projects {
+        width: calc(100% - 2rem);
+    }
+
+    .howto-hero {
+        min-height: 485px;
+        align-items: end;
+    }
+
+    .howto-hero > img {
+        object-position: 58% center;
+    }
+
+    .howto-hero-shade {
+        background: linear-gradient(0deg, rgba(39, 24, 13, 0.95) 0%, rgba(61, 38, 22, 0.82) 58%, rgba(61, 38, 22, 0.42) 100%);
+    }
+
+    .howto-hero-content {
+        padding: 2rem 0 4rem;
+    }
+
+    .howto-hero h1 {
+        font-size: clamp(2.5rem, 11vw, 3.5rem);
+    }
+
+    .howto-hero-caption {
+        right: 1rem;
+        left: 1rem;
+        font-size: 0.48rem;
+    }
+
+    .howto-intro {
+        grid-template-columns: 1fr;
+        gap: 0.65rem;
+        width: calc(100% - 2rem);
+        padding: 2rem 0;
+    }
+
+    .howto-intro > p:last-child {
+        font-size: 1.15rem;
+    }
+
+    .howto-section-heading {
+        align-items: start;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .howto-filters {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 0.25rem 0.1rem 0.45rem;
+        scrollbar-width: thin;
+    }
+
+    .howto-filter {
+        flex: 0 0 auto;
+    }
+
+    .howto-project-grid {
+        grid-template-columns: 1fr;
+        gap: 0.8rem;
+    }
+
+    .howto-project-image {
+        height: 220px;
+    }
+
+    .process-section {
+        padding: 2.5rem 1rem;
+    }
+
+    .process-steps-panel {
+        padding: 1rem;
+    }
+
+    .howto-principles {
+        gap: 0.6rem;
+    }
+
+    .howto-principles p {
+        font-size: 0.9rem;
+    }
+
+    .howto-bottom-cta {
+        align-items: start;
+        flex-direction: column;
+        padding: 2.5rem 1rem;
+    }
+}

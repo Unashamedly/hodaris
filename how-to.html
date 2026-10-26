@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Practical step-by-step home and DIY projects from Hodaris Press, from woodworking and repairs to creative reuse and outdoor builds.">
+    <meta name="theme-color" content="#603813">
+    <title>How-to &amp; DIY Projects | Hodaris Press</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="how-to.css">
+</head>
+<body class="howto-page">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <div class="utility-bar">
+        <div class="utility-inner">
+            <button class="utility-search" id="search-toggle" type="button" aria-expanded="false" aria-controls="site-search" aria-label="Open site search">
+                <svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="8.5" cy="8.5" r="5.5"></circle><path d="m12.5 12.5 4 4"></path></svg>
+                <span>Search</span>
+            </button>
+            <div class="utility-social" aria-label="Social links">
+                <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                <a href="https://x.com/" aria-label="X">X</a>
+                <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                <a href="https://wa.me/" aria-label="WhatsApp">◉</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="search-panel" id="site-search" hidden>
+        <div class="search-panel-inner">
+            <form id="site-search-form" role="search">
+                <label class="visually-hidden" for="site-search-input">Search articles and resources</label>
+                <input id="site-search-input" type="search" placeholder="Search articles and resources..." autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+            <button id="search-close" class="search-close" type="button" aria-label="Close search">Close</button>
+            <div id="search-results" class="search-results" aria-live="polite"></div>
+        </div>
+    </section>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html" aria-label="Hodaris Lifestyle home"><img src="Hodaris Lifestyle.png" alt="Hodaris Lifestyle"></a>
+            <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+                <span class="menu-label">Menu</span>
+            </button>
+            <nav class="primary-navigation" id="primary-navigation" aria-label="Main navigation">
+                <a class="nav-item" href="index.html"><span>Home</span><small>Resource centre</small></a>
+                <a class="nav-item" href="blog.html#resources"><span>Blogs &amp; publications</span><small>Stories and articles</small></a>
+                <a class="nav-item" href="gallery.html"><span>Gallery</span><small>Visual stories</small></a>
+                <a class="nav-item" href="Garden.html"><span>Garden</span><small>Grow &amp; learn</small></a>
+                <a class="nav-item is-current" href="how-to.html" aria-current="page"><span>How-to</span><small>Make &amp; improve</small></a>
+                <a class="nav-item" href="review.html"><span>Reviews</span><small>Considered opinions</small></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <div class="howto-breadcrumb"><a href="index.html">Hodaris Press</a><span aria-hidden="true">/</span><span>How-to &amp; DIY</span></div>
+
+        <section class="howto-hero" aria-labelledby="howto-title">
+            <img src="Board.jpg" alt="A framed print leaning against a wall in a bright home" fetchpriority="high">
+            <div class="howto-hero-shade"></div>
+            <div class="howto-hero-content">
+                <p class="howto-eyebrow"><span></span> Practical projects / Made by you</p>
+                <h1 id="howto-title">Make a little more<br><em>with what you have.</em></h1>
+                <p>Clear, considered guides for improving your home, learning a tool, and giving useful things another life.</p>
+                <div class="howto-hero-actions">
+                    <a class="button button-light" href="#projects">Find a project <span aria-hidden="true">&darr;</span></a>
+                    <a class="button button-quiet" href="#process-guide">See the process</a>
+                </div>
+            </div>
+            <span class="howto-hero-caption">A GOOD PROJECT STARTS WITH A PLAN</span>
+        </section>
+
+        <section class="howto-intro" aria-label="About the project guides">
+            <p class="howto-intro-label">The Hodaris workshop</p>
+            <p>Start with a clear plan. Work at a safe pace. Finish with something useful — and know when a project is best left to a qualified professional.</p>
+        </section>
+
+        <section class="howto-projects" id="projects" aria-labelledby="projects-heading">
+            <div class="howto-section-heading">
+                <div>
+                    <p class="howto-section-kicker">Browse the workshop</p>
+                    <h2 id="projects-heading">What would you like to make?</h2>
+                </div>
+                <p class="howto-section-summary">Choose a topic to find a practical place to begin.</p>
+            </div>
+
+            <div class="howto-filters" role="group" aria-label="Filter DIY projects">
+                <button class="howto-filter is-active" type="button" data-project-filter="all" aria-pressed="true">All projects</button>
+                <button class="howto-filter" type="button" data-project-filter="woodwork" aria-pressed="false">Woodwork</button>
+                <button class="howto-filter" type="button" data-project-filter="improvement" aria-pressed="false">Home improvement</button>
+                <button class="howto-filter" type="button" data-project-filter="tools" aria-pressed="false">Tools</button>
+                <button class="howto-filter" type="button" data-project-filter="reuse" aria-pressed="false">Repurpose</button>
+                <button class="howto-filter" type="button" data-project-filter="electrical" aria-pressed="false">Electrical safety</button>
+                <button class="howto-filter" type="button" data-project-filter="outdoor" aria-pressed="false">Outdoor</button>
+            </div>
+
+            <div class="howto-project-grid" id="howto-project-grid">
+                <article class="howto-project-card" data-project-category="woodwork">
+                    <button class="howto-project-select" type="button" data-project-id="timber-shelf" aria-pressed="true">
+                        <span class="howto-project-image"><img src="Board.jpg" alt="" loading="lazy"><span>WOODWORK</span></span>
+                        <span class="howto-project-copy"><small>Beginner · 1 afternoon</small><strong>Build a simple display shelf</strong><span>Create a neat, light-duty shelf for a favourite room.</span><span class="howto-open-guide">View process <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+                <article class="howto-project-card" data-project-category="improvement">
+                    <button class="howto-project-select" type="button" data-project-id="paint-refresh" aria-pressed="false">
+                        <span class="howto-project-image"><img src="Plac.jpg" alt="" loading="lazy"><span>HOME IMPROVEMENT</span></span>
+                        <span class="howto-project-copy"><small>Beginner · A weekend</small><strong>Refresh a tired room</strong><span>Plan a small paint-and-repair refresh with a tidy finish.</span><span class="howto-open-guide">View process <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+                <article class="howto-project-card" data-project-category="tools">
+                    <button class="howto-project-select" type="button" data-project-id="tool-station" aria-pressed="false">
+                        <span class="howto-project-image"><img src="Pen.jpg" alt="" loading="lazy"><span>TOOLS &amp; SETUP</span></span>
+                        <span class="howto-project-copy"><small>Beginner · 1–2 hours</small><strong>Set up a small project station</strong><span>Make a compact, organized place to work and store basics.</span><span class="howto-open-guide">View process <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+                <article class="howto-project-card" data-project-category="reuse">
+                    <button class="howto-project-select" type="button" data-project-id="crate-planter" aria-pressed="false">
+                        <span class="howto-project-image"><img src="Green Bag.jpg" alt="" loading="lazy"><span>CREATIVE REUSE</span></span>
+                        <span class="howto-project-copy"><small>Beginner · 2–3 hours</small><strong>Give a sturdy crate a second life</strong><span>Turn a sound, clean crate into a useful storage piece.</span><span class="howto-open-guide">View process <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+                <article class="howto-project-card" data-project-category="electrical">
+                    <button class="howto-project-select" type="button" data-project-id="electrical-check" aria-pressed="false">
+                        <span class="howto-project-image"><img src="Droplets.jpg" alt="" loading="lazy"><span>ELECTRICAL SAFETY</span></span>
+                        <span class="howto-project-copy"><small>Safety guide · Read first</small><strong>Know when to call an electrician</strong><span>Recognize warning signs and prepare a safe hand-off.</span><span class="howto-open-guide">View safety guide <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+                <article class="howto-project-card" data-project-category="outdoor">
+                    <button class="howto-project-select" type="button" data-project-id="outdoor-bench" aria-pressed="false">
+                        <span class="howto-project-image"><img src="Seasky.jpg" alt="" loading="lazy"><span>OUTDOOR</span></span>
+                        <span class="howto-project-copy"><small>Beginner · A weekend</small><strong>Plan a simple outdoor bench</strong><span>Think through location, weather exposure and a comfortable fit.</span><span class="howto-open-guide">View process <b aria-hidden="true">&rarr;</b></span></span>
+                    </button>
+                </article>
+            </div>
+            <p id="howto-empty-state" class="howto-empty-state" hidden>No projects in this category yet. Try another topic.</p>
+        </section>
+
+        <section class="process-section" id="process-guide" aria-labelledby="process-heading">
+            <div class="process-intro">
+                <p class="howto-section-kicker">Project field guide</p>
+                <h2 id="process-heading">A clear process makes better work.</h2>
+                <p>Each guide brings the plan, preparation, build and final check together — so you know what to do before you begin.</p>
+                <div class="process-meta" id="process-meta"></div>
+                <div class="materials-panel">
+                    <h3>Gather first</h3>
+                    <ul id="process-materials"></ul>
+                </div>
+                <aside class="process-safety" id="process-safety">
+                    <strong>Safety first</strong>
+                    <p id="process-safety-copy"></p>
+                </aside>
+            </div>
+            <div class="process-steps-panel">
+                <div class="process-steps-heading">
+                    <span class="process-number">01 — 04</span>
+                    <p>THE PROCESS</p>
+                </div>
+                <ol class="process-steps" id="process-steps" aria-live="polite"></ol>
+                <p class="process-note" id="process-note"></p>
+            </div>
+        </section>
+
+        <section class="howto-principles" aria-label="Workshop principles">
+            <p>Plan carefully.</p><span aria-hidden="true">/</span><p>Use the right tool.</p><span aria-hidden="true">/</span><p>Work safely.</p><span aria-hidden="true">/</span><p>Make it your own.</p>
+        </section>
+
+        <section class="howto-bottom-cta">
+            <div>
+                <p class="howto-section-kicker">Keep learning</p>
+                <h2>More ideas from the Hodaris archive.</h2>
+            </div>
+            <a class="button button-light" href="blog.html#resources">Browse articles &amp; guides <span aria-hidden="true">&rarr;</span></a>
+        </section>
+    </main>
+
+    <footer class="home-footer">
+        <div class="footer-main">
+            <div class="footer-brand-column">
+                <a href="index.html" class="footer-brand" aria-label="Hodaris Lifestyle home"><img src="Hodaris Lifestyle.png" alt="Hodaris Lifestyle"></a>
+                <p>Hodaris Press publishes an open archive of knowledge — articles, literature, media and research for the curious and the committed.</p>
+                <div class="footer-social">
+                    <a href="https://www.facebook.com/" aria-label="Facebook">f</a>
+                    <a href="https://x.com/" aria-label="X">X</a>
+                    <a href="https://www.youtube.com/" aria-label="YouTube">▶</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h2>Explore</h2>
+                <a href="blog.html#resources">Blogs &amp; publications</a>
+                <a href="gallery.html">Gallery &amp; portfolio</a>
+                <a href="Garden.html">Farm insights</a>
+                <a href="review.html">Reviews</a>
+            </div>
+            <div class="footer-column">
+                <h2>Workshop</h2>
+                <a href="#projects">Woodwork &amp; tools</a>
+                <a href="#projects">Home improvement</a>
+                <a href="#projects">Creative reuse</a>
+            </div>
+            <div class="footer-column">
+                <h2>Hodaris Press</h2>
+                <a href="index.html#about">About the resource centre</a>
+                <a href="blog.html#resources">Browse the archive</a>
+                <a href="index.html">Back to home</a>
+            </div>
+        </div>
+        <div class="footer-bottom"><span>&copy; <span id="current-year"></span> Hodaris Press</span><a href="#main-content">Back to top &uarr;</a></div>
+    </footer>
+
+    <script src="wordpress-posts.js"></script>
+    <script src="home.js"></script>
+    <script src="how-to.js"></script>
+</body>
+</html>
