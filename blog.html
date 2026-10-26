@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodaris Blog</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts for clean typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="nav-container">
+            <!-- Left: Image Logo -->
+            <a href="index.html" class="logo-link" aria-label="Hodaris Press home">
+                <img src="Asset 2.png" alt="Hodaris Press" class="logo-img">
+            </a>
+            <button class="blog-menu-toggle" id="blog-menu-toggle" type="button" aria-expanded="false" aria-controls="blog-primary-navigation">
+                <span aria-hidden="true">☰</span>
+                <span>Menu</span>
+            </button>
+
+            <!-- Primary site navigation -->
+            <nav class="main-nav" id="blog-primary-navigation" aria-label="Main navigation">
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#collection" class="active" aria-current="page">Blogs &amp; publications</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="Garden.html">Garden</a></li>
+                    <li><a href="how-to.html">How-to</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                </ul>
+            </nav>
+            <a class="subscribe-link" href="#subscribe">Subscribe</a>
+        </div>
+    </header>
+
+    <section id="collection" class="collection-header" aria-labelledby="collection-title">
+        <div class="collection-container">
+            <div class="collection-heading">
+                <div class="collection-heading-copy">
+                    <p class="collection-eyebrow"><span>01</span><span class="eyebrow-rule" aria-hidden="true"></span>Resource Library</p>
+                    <h1 id="collection-title">Browse the Collection</h1>
+                </div>
+                <label class="resource-search">
+                    <span class="search-icon" aria-hidden="true">
+                        <svg viewBox="0 0 20 20" focusable="false"><circle cx="8.7" cy="8.7" r="5.4"></circle><path d="m12.7 12.7 4 4"></path></svg>
+                    </span>
+                    <span class="visually-hidden">Search resources</span>
+                    <input id="resource-search-input" type="search" placeholder="Search resources..." autocomplete="off">
+                </label>
+            </div>
+            <nav class="resource-tabs" aria-label="Filter resources">
+                <button type="button" class="resource-tab is-active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="resource-tab" data-filter="articles" aria-pressed="false">Articles</button>
+                <button type="button" class="resource-tab" data-filter="news" aria-pressed="false">News</button>
+                <button type="button" class="resource-tab" data-filter="literature" aria-pressed="false">Literature</button>
+                <button type="button" class="resource-tab" data-filter="podcasts" aria-pressed="false">Podcasts</button>
+                <button type="button" class="resource-tab" data-filter="downloads" aria-pressed="false">Downloads</button>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content: Blog Section -->
+    <main id="resources" class="main-content">
+        <div class="container">
+            <div class="blog-grid" id="blog-grid">
+                
+                <!-- Blog Card 1 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="blue.jpg" alt="Nature of Learning">
+                        <span class="card-badge article">ARTICLE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">RESEARCH POLICY</span>
+                            <span class="date">Sep 18, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The place of the home in the Nature of Learning and growth</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            The home is most suitable place for learning and exploration, children already are in safe environment.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">OPEN ACCESS</span>
+                            <span class="tag">PUBLISHING</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Hodari Munubi</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="leaf.jpg" alt="Productive household">
+                        <span class="card-badge essay">ESSAY</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">PERSPECTIVE</span>
+                            <span class="date">Oct 10, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The New perspective of the Productive household</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            The Basic outlook to productive household as a parallel economy with the political economy.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">READ MORE</span>
+                            <span class="tag">ECONOMICS</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Hodari Munubi</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="birds.jpg" alt="Ecosystem balance">
+                        <span class="card-badge article">ARTICLE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">RESEARCH POLICY</span>
+                            <span class="date">Sep 18, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The ecosystem and its collaborations in Balance</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            How the shift toward open repositories is reshaping who gets to participate in global knowledge production.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">OPEN ACCESS</span>
+                            <span class="tag">PUBLISHING</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Priya Chandrasekhar</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+				  <!-- Blog Card 1 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="blue.jpg" alt="Nature of Learning">
+                        <span class="card-badge article">ARTICLE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">RESEARCH POLICY</span>
+                            <span class="date">Sep 18, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The place of the home in the Nature of Learning and growth</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            The home is most suitable place for learning and exploration, children already are in safe environment.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">OPEN ACCESS</span>
+                            <span class="tag">PUBLISHING</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Hodari Munubi</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+
+                <!-- Blog Card 2 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="leaf.jpg" alt="Productive household">
+                        <span class="card-badge essay">ESSAY</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">PERSPECTIVE</span>
+                            <span class="date">Oct 10, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The New perspective of the Productive household</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            The Basic outlook to productive household as a parallel economy with the political economy.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">READ MORE</span>
+                            <span class="tag">ECONOMICS</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Hodari Munubi</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+
+                <!-- Blog Card 3 -->
+                <article class="blog-card">
+                    <div class="card-image-wrapper">
+                        <img src="birds.jpg" alt="Ecosystem balance">
+                        <span class="card-badge article">ARTICLE</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-meta">
+                            <span class="category">RESEARCH POLICY</span>
+                            <span class="date">Sep 18, 2026</span>
+                        </div>
+                        <h2 class="card-title">
+                            <a href="#">The ecosystem and its collaborations in Balance</a>
+                        </h2>
+                        <p class="card-excerpt">
+                            How the shift toward open repositories is reshaping who gets to participate in global knowledge production.
+                        </p>
+                        <div class="card-tags">
+                            <span class="tag">OPEN ACCESS</span>
+                            <span class="tag">PUBLISHING</span>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <span class="author">Priya Chandrasekhar</span>
+                        <span class="read-time">9 min read</span>
+                    </div>
+                </article>
+
+            </div>
+            <p id="no-resources-message" class="no-resources-message" hidden>No resources match your search.</p>
+        </div>
+    </main>
+    <script src="wordpress-posts.js"></script>
+    <script>
+        const resourceSearch = document.getElementById('resource-search-input');
+        const resourceTabs = document.querySelectorAll('.resource-tab');
+        const blogGrid = document.getElementById('blog-grid');
+        const noResourcesMessage = document.getElementById('no-resources-message');
+        let activeResourceFilter = 'all';
+        const posts = window.hodarisPosts;
+
+        function filterResources() {
+            const query = resourceSearch.value.trim().toLocaleLowerCase();
+            let visibleCount = 0;
+
+            blogGrid.querySelectorAll('.blog-card').forEach((card) => {
+                const matchesFilter = activeResourceFilter === 'all' || card.dataset.resourceType === activeResourceFilter;
+                const matchesSearch = card.dataset.searchText.includes(query);
+                const isVisible = matchesFilter && matchesSearch;
+
+                card.hidden = !isVisible;
+                if (isVisible) visibleCount += 1;
+            });
+
+            noResourcesMessage.hidden = visibleCount > 0;
+        }
+
+        function getResourceType(categories) {
+            const normalizedCategories = categories.join(' ').toLocaleLowerCase();
+            if (normalizedCategories.includes('literature')) return 'literature';
+            if (normalizedCategories.includes('podcast')) return 'podcasts';
+            if (normalizedCategories.includes('download')) return 'downloads';
+            if (normalizedCategories.includes('news')) return 'news';
+            return 'articles';
+        }
+
+        function formatDate(date) {
+            const parsedDate = new Date(`${date.replace(' ', 'T')}Z`);
+            return Number.isNaN(parsedDate.getTime())
+                ? date
+                : parsedDate.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+        }
+
+        function makeElement(tagName, className, text) {
+            const element = document.createElement(tagName);
+            if (className) element.className = className;
+            if (text) element.textContent = text;
+            return element;
+        }
+
+        function decodeHtmlEntities(value) {
+            return new DOMParser().parseFromString(value, 'text/html').documentElement.textContent;
+        }
+
+        function renderPostCard(post) {
+            const type = getResourceType(post.categories);
+            const categories = (post.categories.length ? post.categories : ['Uncategorized']).map(decodeHtmlEntities);
+            const card = makeElement('article', 'blog-card');
+            card.dataset.resourceType = type;
+            card.dataset.searchText = `${post.title} ${post.excerpt} ${post.author} ${categories.join(' ')}`.toLocaleLowerCase();
+
+            const imageWrapper = makeElement('div', 'card-image-wrapper');
+            if (post.image) {
+                const image = makeElement('img');
+                image.src = post.image;
+                image.alt = post.imageAlt || post.title;
+                image.loading = 'lazy';
+                imageWrapper.append(image);
+            }
+            const badge = makeElement('span', `card-badge ${type === 'articles' ? 'article' : type}`, type.toUpperCase());
+            imageWrapper.append(badge);
+            card.append(imageWrapper);
+
+            const content = makeElement('div', 'card-content');
+            const metadata = makeElement('div', 'card-meta');
+            metadata.append(makeElement('span', 'category', categories[0].toUpperCase()));
+            metadata.append(makeElement('span', 'date', formatDate(post.date)));
+            content.append(metadata);
+
+            const title = makeElement('h2', 'card-title');
+            const titleLink = makeElement('a', '', post.title);
+            titleLink.href = `article.html?post=${encodeURIComponent(post.slug)}`;
+            title.append(titleLink);
+            content.append(title);
+            content.append(makeElement('p', 'card-excerpt', post.excerpt || 'Read the full post.'));
+
+            const tags = makeElement('div', 'card-tags');
+            categories.slice(0, 2).forEach((category) => tags.append(makeElement('span', 'tag', category.toUpperCase())));
+            content.append(tags);
+            card.append(content);
+
+            const footer = makeElement('div', 'card-footer');
+            footer.append(makeElement('span', 'author', post.author || 'Hodaris Press'));
+            const articleText = new DOMParser().parseFromString(post.content, 'text/html').body.textContent;
+            const wordCount = articleText.split(/\s+/).filter(Boolean).length;
+            footer.append(makeElement('span', 'read-time', `${Math.max(1, Math.ceil(wordCount / 200))} min read`));
+            card.append(footer);
+            return card;
+        }
+
+        if (!Array.isArray(posts)) {
+            noResourcesMessage.textContent = 'The imported posts could not be loaded. Check that wordpress-posts.js is available.';
+            noResourcesMessage.hidden = false;
+            blogGrid.replaceChildren();
+        } else {
+            blogGrid.replaceChildren(...posts.slice().sort((first, second) => new Date(second.date) - new Date(first.date)).map(renderPostCard));
+        }
+
+        resourceTabs.forEach((tab) => {
+            tab.addEventListener('click', () => {
+                activeResourceFilter = tab.dataset.filter;
+                resourceTabs.forEach((item) => {
+                    const isActive = item === tab;
+                    item.classList.toggle('is-active', isActive);
+                    item.setAttribute('aria-pressed', String(isActive));
+                });
+                filterResources();
+            });
+        });
+        resourceSearch.addEventListener('input', filterResources);
+    </script>
+    <script src="blog-nav.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hodaris Press - New Resources</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SECTION 04: STAY INFORMED / SUBSCRIPTION FORM -->
+    <section id="subscribe" class="newsletter-section">
+        <div class="newsletter-container">
+            <div class="newsletter-left">
+                <span class="section-tag">04 &mdash; STAY INFORMED</span>
+                <h1>New resources,<br><em>every week.</em></h1>
+                <p>Articles, curated literature, new podcast episodes, and downloadable reports &mdash; no noise, no filler.</p>
+            </div>
+            
+            <div class="newsletter-right">
+                <span class="reader-count">JOIN 12,400 READERS</span>
+                <form class="subscribe-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="your@email.com" required>
+                    <button type="submit" class="subscribe-btn">Subscribe to the Digest</button>
+                </form>
+                <p class="form-disclaimer">No tracking. Unsubscribe at any time.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer id="about" class="site-footer">
+        <div class="footer-container">
+            
+            <!-- Column 1: Brand & Bio -->
+            <div class="footer-col brand-col">
+                <div class="footer-logo">
+                    <!-- Placeholder SVG for Hodaris Press Icon -->
+                   
+                    <img src="Whitelogo.png" alt="Site Logo" class="logo-img">
+                </div>
+                <p class="footer-bio">
+                    Hodaris Press publishes an open archive of knowledge &mdash; articles, literature, media, and research for the curious and the committed.
+                </p>
+                <div class="footer-socials">
+                    <a href="#" aria-label="X">X</a>
+                    <a href="#" aria-label="RSS">RSS</a>
+                    <a href="#" aria-label="Email">Email</a>
+                </div>
+            </div>
+
+            <!-- Column 2: Resources -->
+            <div class="footer-col">
+                <h4>RESOURCES</h4>
+                <ul>
+                    <li><a href="#">Articles</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="#">Literature</a></li>
+                    <li><a href="#">Podcasts</a></li>
+                    <li><a href="#">Downloads</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Collections -->
+            <div class="footer-col">
+                <h4>COLLECTIONS</h4>
+                <ul>
+                    <li><a href="#">Cultural Studies</a></li>
+                    <li><a href="#">Information Science</a></li>
+                    <li><a href="#">Heritage</a></li>
+                    <li><a href="#">Philosophy</a></li>
+                    <li><a href="#">Research Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Organisation -->
+            <div class="footer-col">
+                <h4>ORGANISATION</h4>
+                <ul>
+                    <li><a href="#">About Hodaris Press</a></li>
+                    <li><a href="#">Editorial Team</a></li>
+                    <li><a href="#">Submission Guidelines</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+
+</body>
+</html>
